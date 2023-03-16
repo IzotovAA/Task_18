@@ -62,14 +62,14 @@
             <section class="section-projects" id="projects">
                 <div class="container-projects">
                     <ul class="projects-list">
-                        <li class="projects-list__item">
-                            <a href="#">Rostov-on-Don, Admiral</a>
+                        <li class="projects-list__item1">
+                            <a href="#projects">Rostov-on-Don, Admiral</a>
                         </li>
-                        <li class="projects-list__item">
-                            <a href="#">Sochi Thieves</a>
+                        <li class="projects-list__item2">
+                            <a href="#projects">Sochi Thieves</a>
                         </li>
-                        <li class="projects-list__item">
-                            <a href="#">Rostov-on-Don Patriotic</a>
+                        <li class="projects-list__item3">
+                            <a href="#projects">Rostov-on-Don Patriotic</a>
                         </li>
                     </ul>
                     <div class="projects-wrapper">
@@ -84,11 +84,15 @@
                             <div class="projects-info-detail">
                                 <div>
                                     <h3>City:</h3>
-                                    <p>Rostov-on-Don LCD admiral</p>
+                                    <p class="projects-info-detail__item1">
+                                        Rostov-on-Don LCD admiral
+                                    </p>
                                 </div>
                                 <div>
                                     <h3>apartment area:</h3>
-                                    <p>81 m2</p>
+                                    <p class="projects-info-detail__item2">
+                                        81 m2
+                                    </p>
                                 </div>
                                 <div>
                                     <h3>Repair time:</h3>
@@ -100,7 +104,41 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="img/proj1.jpg" alt="pic" />
+                        <!-- <img src="img/proj1.jpg" alt="pic" /> -->
+
+                        <div class="projects-slider">
+                            <ul class="projects-slider-list">
+                                <li class="projects-slider-element">
+                                    <img src="img/proj1.jpg" alt="1" />
+                                </li>
+                                <li class="projects-slider-element">
+                                    <img src="img/proj2.jpg" alt="2" />
+                                </li>
+                                <li class="projects-slider-element">
+                                    <img src="img/proj3.jpg" alt="3" />
+                                </li>
+                            </ul>
+
+                            <div class="projects-slider-control">
+                                <div class="projects-slider-arrow-left">
+                                    <img
+                                        src="img/left-arrow.svg"
+                                        alt="left-arrow"
+                                    />
+                                </div>
+                                <div class="projects-slider-dots">
+                                    <span class="projects-slider-dot1"></span>
+                                    <span class="projects-slider-dot2"></span>
+                                    <span class="projects-slider-dot3"></span>
+                                </div>
+                                <div class="projects-slider-arrow-right">
+                                    <img
+                                        src="img/right-arrow.svg"
+                                        alt="right-arrow"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -581,5 +619,6 @@
                 <button class="footer-button button">Request a call</button>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
