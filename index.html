@@ -40,7 +40,13 @@
                 </nav>
                 <span class="tel">+7 (928) 768-32-39</span>
                 <button class="header-button button">Request a call</button>
+                <div class="burger-menu">
+                    <span class="span-x1"></span>
+                    <span class="span-x2"></span>
+                    <span class="span-x3"></span>
+                </div>
             </div>
+            <!-- <div class="popup"></div> -->
         </header>
 
         <main>
@@ -56,7 +62,9 @@
                     </p>
                     <button class="btn-calc button">CALCULATE THE COST</button>
                     <button class="btn-submit">SUBMIT YOUR APPLICATION</button>
+                    <button class="btn-submit-mini">APPLICATION</button>
                 </div>
+                <div class="popup"></div>
             </section>
 
             <section class="section-projects" id="projects">
@@ -103,22 +111,6 @@
                                     <p>Upon request</p>
                                 </div>
                             </div>
-                        </div>
-                        <!-- <img src="img/proj1.jpg" alt="pic" /> -->
-
-                        <div class="projects-slider">
-                            <ul class="projects-slider-list">
-                                <li class="projects-slider-element">
-                                    <img src="img/proj1.jpg" alt="1" />
-                                </li>
-                                <li class="projects-slider-element">
-                                    <img src="img/proj2.jpg" alt="2" />
-                                </li>
-                                <li class="projects-slider-element">
-                                    <img src="img/proj3.jpg" alt="3" />
-                                </li>
-                            </ul>
-
                             <div class="projects-slider-control">
                                 <div class="projects-slider-arrow-left">
                                     <img
@@ -139,6 +131,78 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- <img src="img/proj1.jpg" alt="pic" /> -->
+
+                        <div class="projects-slider">
+                            <ul class="projects-slider-list">
+                                <li class="projects-slider-element">
+                                    <img src="img/proj1.jpg" alt="1" />
+                                </li>
+                                <li class="projects-slider-element">
+                                    <img src="img/proj2.jpg" alt="2" />
+                                </li>
+                                <li class="projects-slider-element">
+                                    <img src="img/proj3.jpg" alt="3" />
+                                </li>
+                            </ul>
+
+                            <div class="projects-slider-control-mini">
+                                <div class="projects-slider-arrow-left">
+                                    <img
+                                        src="img/left-arrow.svg"
+                                        alt="left-arrow"
+                                    />
+                                </div>
+                                <div class="projects-slider-dots">
+                                    <span class="projects-slider-dot1"></span>
+                                    <span class="projects-slider-dot2"></span>
+                                    <span class="projects-slider-dot3"></span>
+                                </div>
+                                <div class="projects-slider-arrow-right">
+                                    <img
+                                        src="img/right-arrow.svg"
+                                        alt="right-arrow"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="projects-slider-control-mob">
+                                <div class="projects-slider-arrow-left">
+                                    <img
+                                        src="img/left-arrow-mob.svg"
+                                        alt="left-arrow"
+                                    />
+                                </div>
+
+                                <div class="projects-slider-arrow-right">
+                                    <img
+                                        src="img/right-arrow-mob.svg"
+                                        alt="right-arrow"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="projects-info-detail-mob">
+                            <div>
+                                <h3>City:</h3>
+                                <p class="projects-info-detail__item1">
+                                    Rostov-on-Don LCD admiral
+                                </p>
+                            </div>
+                            <div>
+                                <h3>apartment area:</h3>
+                                <p class="projects-info-detail__item2">81 m2</p>
+                            </div>
+                            <div>
+                                <h3>Repair time:</h3>
+                                <p>3.5 months</p>
+                            </div>
+                            <div>
+                                <h3>Repair Cost:</h3>
+                                <p>Upon request</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -150,7 +214,9 @@
                         <img src="img/control.svg" alt="icon" />
                     </div>
                     <div class="control-img">
-                        <div>
+                        <img src="img/control-mini.jpg" alt="pic" />
+                        <div class="control-background"></div>
+                        <div class="control-icon">
                             <img src="img/play.svg" alt="icon" />
                         </div>
                     </div>
@@ -205,6 +271,50 @@
                                 data</span
                             >
                         </label>
+                    </form>
+
+                    <form
+                        action="#"
+                        method="post"
+                        target="_blank"
+                        class="control-form-mini"
+                    >
+                        <label
+                            for="control-name-mini"
+                            class="control-label label"
+                            >Name</label
+                        >
+
+                        <input
+                            type="text"
+                            id="control-name-mini"
+                            placeholder="What is your name:"
+                            class="control-input"
+                        />
+
+                        <label
+                            for="control-phone-mini"
+                            class="control-label label"
+                            >Phone</label
+                        >
+
+                        <input
+                            type="tel"
+                            id="control-phone-mini"
+                            placeholder="Your phone number:"
+                            class="control-input"
+                        />
+
+                        <label class="control-label-checkbox">
+                            <input type="checkbox" id="control-checkbox-mini" />
+                            <span class="control-checkbox-fake"></span>
+                            <span class="control-checkbox-text"
+                                >I agree to the processing of personal
+                                data</span
+                            >
+                        </label>
+
+                        <button type="submit" class="button">Submit</button>
                     </form>
                 </div>
             </section>
@@ -375,31 +485,58 @@
                     <div class="fantasies-info">
                         <h2>We realize your wildest fantasies</h2>
                         <ul class="fantasies-info-menu">
-                            <li><a href="#">American classic</a></li>
-                            <li><a href="#">Empire</a></li>
-                            <li><a href="#">Classical</a></li>
-                            <li><a href="#">Loft</a></li>
-                            <li><a href="#">Minimalism</a></li>
-                            <li><a href="#">Provence</a></li>
-                            <li><a href="#">Romanticism</a></li>
-                            <li><a href="#">Scandinavian style</a></li>
-                            <li><a href="#">Mediterranean style</a></li>
-                            <li><a href="#">High tech</a></li>
-                            <li><a href="#">Eclecticism</a></li>
+                            <li><a href="#reviews">American classic</a></li>
+                            <li><a href="#reviews">Empire</a></li>
+                            <li><a href="#reviews">Classical</a></li>
+                            <li><a href="#reviews">Loft</a></li>
+                            <li><a href="#reviews">Minimalism</a></li>
+                            <li><a href="#reviews">Provence</a></li>
+                            <li><a href="#reviews">Romanticism</a></li>
+                            <li><a href="#reviews">Scandinavian style</a></li>
+                            <li><a href="#reviews">Mediterranean style</a></li>
+                            <li><a href="#reviews">High tech</a></li>
+                            <li><a href="#reviews">Eclecticism</a></li>
                         </ul>
                     </div>
                     <div class="fantasies-pictures">
-                        <div class="fantasies-pictures__item1">
+                        <div
+                            class="fantasies-pictures__item1 fantasies-pictures__item"
+                        >
                             <img src="img/fantasies1.jpg" alt="pic" />
                         </div>
-                        <div class="fantasies-pictures__item2">
+                        <div
+                            class="fantasies-pictures__item2 fantasies-pictures__item"
+                        >
                             <img src="img/fantasies2.jpg" alt="pic" />
                         </div>
-                        <div class="fantasies-pictures__item3">
+                        <div
+                            class="fantasies-pictures__item3 fantasies-pictures__item"
+                        >
                             <img src="img/fantasies3.jpg" alt="pic" />
                         </div>
-                        <div class="fantasies-pictures__item4">
+                        <div
+                            class="fantasies-pictures__item4 fantasies-pictures__item"
+                        >
                             <img src="img/fantasies4.jpg" alt="pic" />
+                        </div>
+                    </div>
+                    <div class="fantasies-pictures-mob">
+                        <h2>We realize your wildest fantasies</h2>
+                        <img src="img/fantasies1-mob.jpg" alt="pic" />
+                        <div class="fantasies-slider-control-mob">
+                            <div class="fantasies-slider-arrow-left">
+                                <img
+                                    src="img/left-arrow-mob.svg"
+                                    alt="left-arrow"
+                                />
+                            </div>
+
+                            <div class="fantasies-slider-arrow-right">
+                                <img
+                                    src="img/right-arrow-mob.svg"
+                                    alt="right-arrow"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -573,9 +710,67 @@
 
                         <button type="submit" class="button">Submit</button>
                     </form>
+
+                    <form
+                        action="#"
+                        method="post"
+                        target="_blank"
+                        class="about-form-mob"
+                    >
+                        <h2>have any questions?</h2>
+
+                        <label for="about-name-mob" class="about-label label"
+                            >Name</label
+                        >
+
+                        <input
+                            type="text"
+                            id="about-name-mob"
+                            placeholder="What is your name:"
+                            class="about-input input"
+                        />
+
+                        <label for="about-phone-mob" class="about-label label"
+                            >Phone</label
+                        >
+
+                        <input
+                            type="tel"
+                            id="about-phone-mob"
+                            placeholder="Your phone number:"
+                            class="about-input input"
+                        />
+
+                        <label
+                            for="about-question-mob"
+                            class="about-label label"
+                            >Question</label
+                        >
+
+                        <input
+                            type="text"
+                            id="about-question-mob"
+                            placeholder="I want to know:"
+                            class="about-input input"
+                        />
+
+                        <label class="about-label-checkbox">
+                            <input type="checkbox" id="about-checkbox-mob" />
+                            <span class="about-checkbox-fake"></span>
+                            <span class="about-checkbox-text"
+                                >I agree to the processing of personal
+                                data</span
+                            >
+                        </label>
+
+                        <button type="submit" class="button">Submit</button>
+                    </form>
                 </div>
                 <div class="section-about-background">
                     <div class="container-about">
+                        <div class="about-location-mob">
+                            <img src="img/location-mob.jpg" alt="pic" />
+                        </div>
                         <h2>
                             Rostov-on-Don, Nansen St., 239 Shopping Center
                             Decorum Tel +7 (928) 768 32 29
